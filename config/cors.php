@@ -1,14 +1,14 @@
 <?php
 return [
-'paths' => ['api/*'],
-'allowed_methods' => ['*'],
-'allowed_origins' => [
-    'http://localhost:5173', 
-    'https://web-bps-frontend.vercel.app'
-],
-'allowed_origins_patterns' => [],
-'allowed_headers' => ['*'],
-'exposed_headers' => [],
-'max_age' => 0,
-'supports_credentials' => true,
+    'paths' => ['api/*', 'sanctum/csrf-cookie'],
+    'allowed_methods' => ['*'],
+    'allowed_origins' => [
+        'http://localhost:5173',
+        'https://web-7b7amaa6a-triangga-rifais-projects.vercel.app',
+    ],
+    'allowed_origins_patterns' => [],
+    'allowed_headers' => ['*'],
+    'exposed_headers' => [],
+    'max_age' => 0,
+    'supports_credentials' => true,
 ];
